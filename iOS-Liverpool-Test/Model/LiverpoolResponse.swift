@@ -9,6 +9,10 @@ import Foundation
 
 struct LiverpoolResponse: Codable {
     let productListResult: ProductListResults
+    
+    enum CodingKeys: String, CodingKey {
+        case productListResult = "plpResults"
+    }
 }
 
 struct ProductListResults: Codable {
